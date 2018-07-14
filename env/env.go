@@ -5,9 +5,8 @@ import (
   "os"
   "path"
   "path/filepath"
-
-  "dajour.christophe.org/cache"
-  "dajour.christophe.org/config"
+  "polypentec/cache"
+  "polypentec/config"
 )
 
 const (

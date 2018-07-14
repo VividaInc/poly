@@ -1,7 +1,7 @@
 package protocol
 
 import (
-  "dajour.christophe.org/protocol/db"
+  "polypentec/protocol/db"
 )
 
 func AddMessage(s string, r string, m string) {

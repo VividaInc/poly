@@ -8,10 +8,9 @@ import (
   "path/filepath"
   "strings"
   "time"
-
-  "dajour.christophe.org/asset"
-  "dajour.christophe.org/config"
-  "dajour.christophe.org/router"
+  "polypentec/asset"
+  "polypentec/config"
+  "polypentec/router"
 )
 
 func handleCache(w http.ResponseWriter, r *http.Request) {

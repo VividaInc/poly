@@ -1,6 +1,6 @@
 package cache
 
-import "dajour.christophe.org/file"
+import "polypentec/file"
 
 type Cache interface {
   NewSession()

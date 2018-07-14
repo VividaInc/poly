@@ -2,10 +2,9 @@ package oauth
 
 import (
   "net/http"
-
-  "dajour.christophe.org/cookie"
-  "dajour.christophe.org/protocol/db"
-  "dajour.christophe.org/store"
+  "polypentec/cookie"
+  "polypentec/protocol/db"
+  "polypentec/store"
 )
 
 func SignedInUser(r *http.Request) bool {

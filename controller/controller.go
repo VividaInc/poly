@@ -9,16 +9,15 @@ import (
   "path"
   "path/filepath"
   "strconv"
-
-  "dajour.christophe.org/oauth"
-  "dajour.christophe.org/cookie"
-  "dajour.christophe.org/env"
-  e "dajour.christophe.org/err"
-  "dajour.christophe.org/log"
-  "dajour.christophe.org/protocol"
-  "dajour.christophe.org/protocol/db"
-  "dajour.christophe.org/render"
-  "dajour.christophe.org/store"
+  "polypentec/oauth"
+  "polypentec/cookie"
+  "polypentec/env"
+  e "polypentec/err"
+  "polypentec/log"
+  "polypentec/protocol"
+  "polypentec/protocol/db"
+  "polypentec/render"
+  "polypentec/store"
 )
 
 func About(w http.ResponseWriter, r *http.Request) *e.RequestError {

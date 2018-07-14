@@ -3,8 +3,8 @@ package store
 import (
   "net/http"
 
-  e "dajour.christophe.org/err"
-  "dajour.christophe.org/protocol/db"
+  e "polypentec/err"
+  "polypentec/protocol/db"
 )
 
 func GetUser(r *http.Request) (*db.User, *e.RequestError) {

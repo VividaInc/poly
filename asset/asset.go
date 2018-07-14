@@ -2,8 +2,7 @@ package asset
 
 import (
   "net/http"
-
-  "dajour.christophe.org/file"
+  "polypentec/file"
 )
 
 type Asset interface {

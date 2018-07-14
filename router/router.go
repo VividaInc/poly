@@ -5,9 +5,8 @@ import (
   "os"
   "path"
   "path/filepath"
-
-  "dajour.christophe.org/controller"
-  "dajour.christophe.org/handle"
+  "polypentec/controller"
+  "polypentec/handle"
 )
 
 type Router struct {

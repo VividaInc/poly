@@ -6,7 +6,7 @@ import (
   "path"
   "strings"
 
-  e "dajour.christophe.org/err"
+  e "polypentec/err"
 )
 
 func RenderHTML(w http.ResponseWriter, n string, o interface{}) *e.RequestError {

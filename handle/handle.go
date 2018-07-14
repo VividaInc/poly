@@ -3,12 +3,11 @@ package handle
 import (
   "io/ioutil"
 	"net/http"
-
-	"dajour.christophe.org/config"
-  "dajour.christophe.org/env"
-  "dajour.christophe.org/err"
-  "dajour.christophe.org/log"
-  "dajour.christophe.org/render"
+	"polypentec/config"
+  "polypentec/env"
+  "polypentec/err"
+  "polypentec/log"
+  "polypentec/render"
 )
 
 type Handle interface {

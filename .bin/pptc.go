@@ -7,8 +7,7 @@ import (
   "os/exec"
   "path"
   "path/filepath"
-
-  "dajour.christophe.org/file"
+  "polypentec/file"
 )
 
 type PPTC struct {

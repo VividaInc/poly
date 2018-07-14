@@ -3,7 +3,7 @@ package protocol
 import (
 	"encoding/json"
 
-	"dajour.christophe.org/protocol/db"
+	"polypentec/protocol/db"
 )
 
 func DecodeCategories(categories []db.Category) []byte {
