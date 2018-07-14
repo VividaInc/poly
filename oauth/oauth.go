@@ -2,9 +2,10 @@ package oauth
 
 import (
   "net/http"
-  "poly/cookie"
-  "poly/protocol/db"
-  "poly/store"
+
+  "github.com/VividaInc/poly/cookie"
+  "github.com/VividaInc/poly/protocol/db"
+  "github.com/VividaInc/poly/store"
 )
 
 func SignedInUser(r *http.Request) bool {

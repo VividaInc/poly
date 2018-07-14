@@ -8,9 +8,10 @@ import (
   "path/filepath"
   "strings"
   "time"
-  "poly/asset"
-  "poly/config"
-  "poly/router"
+
+  "github.com/VividaInc/poly/asset"
+  "github.com/VividaInc/poly/config"
+  "github.com/VividaInc/poly/router"
 )
 
 func handleCache(w http.ResponseWriter, r *http.Request) {

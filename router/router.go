@@ -5,8 +5,9 @@ import (
   "os"
   "path"
   "path/filepath"
-  "poly/controller"
-  "poly/handle"
+
+  "github.com/VividaInc/poly/controller"
+  "github.com/VividaInc/poly/handle"
 )
 
 type Router struct {

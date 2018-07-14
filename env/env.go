@@ -5,8 +5,9 @@ import (
   "os"
   "path"
   "path/filepath"
-  "poly/cache"
-  "poly/config"
+
+  "github.com/VividaInc/poly/cache"
+  "github.com/VividaInc/poly/config"
 )
 
 const (

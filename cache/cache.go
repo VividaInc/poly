@@ -1,6 +1,6 @@
 package cache
 
-import "poly/file"
+import "github.com/VividaInc/poly/file"
 
 type Cache interface {
   NewSession()

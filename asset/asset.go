@@ -2,7 +2,8 @@ package asset
 
 import (
   "net/http"
-  "poly/file"
+
+  "github.com/VividaInc/poly/file"
 )
 
 type Asset interface {

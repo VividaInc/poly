@@ -2,8 +2,9 @@ package store
 
 import (
   "net/http"
-  e "poly/err"
-  "poly/protocol/db"
+
+  e "github.com/VividaInc/poly/err"
+  "github.com/VividaInc/poly/protocol/db"
 )
 
 func GetUser(r *http.Request) (*db.User, *e.RequestError) {

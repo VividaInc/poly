@@ -9,15 +9,16 @@ import (
   "path"
   "path/filepath"
   "strconv"
-  "poly/oauth"
-  "poly/cookie"
-  "poly/env"
-  e "poly/err"
-  "poly/log"
-  "poly/protocol"
-  "poly/protocol/db"
-  "poly/render"
-  "poly/store"
+
+  "github.com/VividaInc/poly/oauth"
+  "github.com/VividaInc/poly/cookie"
+  "github.com/VividaInc/poly/env"
+  e "github.com/VividaInc/poly/err"
+  "github.com/VividaInc/poly/log"
+  "github.com/VividaInc/poly/protocol"
+  "github.com/VividaInc/poly/protocol/db"
+  "github.com/VividaInc/poly/render"
+  "github.com/VividaInc/poly/store"
 )
 
 func About(w http.ResponseWriter, r *http.Request) *e.RequestError {

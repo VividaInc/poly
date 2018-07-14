@@ -1,7 +1,7 @@
 package protocol
 
 import (
-  "poly/protocol/db"
+  "github.com/VividaInc/poly/protocol/db"
 )
 
 func AddMessage(s string, r string, m string) {

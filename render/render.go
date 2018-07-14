@@ -5,7 +5,8 @@ import (
   "net/http"
   "path"
   "strings"
-  e "poly/err"
+
+  e "github.com/VividaInc/poly/err"
 )
 
 func RenderHTML(w http.ResponseWriter, n string, o interface{}) *e.RequestError {

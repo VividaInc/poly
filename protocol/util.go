@@ -2,7 +2,8 @@ package protocol
 
 import (
 	"encoding/json"
-	"poly/protocol/db"
+
+	"github.com/VividaInc/poly/protocol/db"
 )
 
 func DecodeCategories(categories []db.Category) []byte {

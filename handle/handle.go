@@ -3,11 +3,12 @@ package handle
 import (
   "io/ioutil"
 	"net/http"
-	"poly/config"
-  "poly/env"
-  "poly/err"
-  "poly/log"
-  "poly/render"
+
+	"github.com/VividaInc/poly/config"
+  "github.com/VividaInc/poly/env"
+  "github.com/VividaInc/poly/err"
+  "github.com/VividaInc/poly/log"
+  "github.com/VividaInc/poly/render"
 )
 
 type Handle interface {
