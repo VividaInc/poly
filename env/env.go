@@ -5,8 +5,8 @@ import (
   "os"
   "path"
   "path/filepath"
-  "polypentec/cache"
-  "polypentec/config"
+  "poly/cache"
+  "poly/config"
 )
 
 const (

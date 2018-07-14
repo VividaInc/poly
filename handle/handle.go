@@ -3,11 +3,11 @@ package handle
 import (
   "io/ioutil"
 	"net/http"
-	"polypentec/config"
-  "polypentec/env"
-  "polypentec/err"
-  "polypentec/log"
-  "polypentec/render"
+	"poly/config"
+  "poly/env"
+  "poly/err"
+  "poly/log"
+  "poly/render"
 )
 
 type Handle interface {

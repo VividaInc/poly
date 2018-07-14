@@ -2,9 +2,8 @@ package store
 
 import (
   "net/http"
-
-  e "polypentec/err"
-  "polypentec/protocol/db"
+  e "poly/err"
+  "poly/protocol/db"
 )
 
 func GetUser(r *http.Request) (*db.User, *e.RequestError) {

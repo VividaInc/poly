@@ -2,9 +2,9 @@ package oauth
 
 import (
   "net/http"
-  "polypentec/cookie"
-  "polypentec/protocol/db"
-  "polypentec/store"
+  "poly/cookie"
+  "poly/protocol/db"
+  "poly/store"
 )
 
 func SignedInUser(r *http.Request) bool {

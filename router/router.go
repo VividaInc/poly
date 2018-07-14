@@ -5,8 +5,8 @@ import (
   "os"
   "path"
   "path/filepath"
-  "polypentec/controller"
-  "polypentec/handle"
+  "poly/controller"
+  "poly/handle"
 )
 
 type Router struct {

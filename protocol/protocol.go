@@ -1,7 +1,7 @@
 package protocol
 
 import (
-  "polypentec/protocol/db"
+  "poly/protocol/db"
 )
 
 func AddMessage(s string, r string, m string) {

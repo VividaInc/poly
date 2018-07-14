@@ -2,7 +2,7 @@ package asset
 
 import (
   "net/http"
-  "polypentec/file"
+  "poly/file"
 )
 
 type Asset interface {

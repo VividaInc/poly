@@ -5,8 +5,7 @@ import (
   "net/http"
   "path"
   "strings"
-
-  e "polypentec/err"
+  e "poly/err"
 )
 
 func RenderHTML(w http.ResponseWriter, n string, o interface{}) *e.RequestError {

@@ -1,6 +1,6 @@
 package cache
 
-import "polypentec/file"
+import "poly/file"
 
 type Cache interface {
   NewSession()

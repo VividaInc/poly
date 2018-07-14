@@ -8,9 +8,9 @@ import (
   "path/filepath"
   "strings"
   "time"
-  "polypentec/asset"
-  "polypentec/config"
-  "polypentec/router"
+  "poly/asset"
+  "poly/config"
+  "poly/router"
 )
 
 func handleCache(w http.ResponseWriter, r *http.Request) {
