@@ -40,7 +40,7 @@ func runOnSecureCache(cert string, key string) {
 }
 
 func RunOnSecureAddr() error {
-  conf := config.ConfSock(".ecce/etc/socket.conf")
+  // conf := config.ConfSock(".ecce/etc/socket.conf")
   rt    := router.NewRouter()
   prot, mux := bindOnAddr(rt, 1)
   rt.Mux = mux
