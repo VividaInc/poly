@@ -50,10 +50,10 @@ func RunOnSecureAddr() error {
     panic(err)
   }
   pwd = filepath.ToSlash(pwd)
-  cert := path.Join(pwd, conf.TLSCert)
-  key  := path.Join(pwd, conf.TLSKey)
-  go runOnSecureCache(cert, key)
-  if err := http.ListenAndServeTLS(prot.Addr, cert, key, mux); err != nil {
+  // cert := path.Join(pwd, conf.TLSCert)
+  // key  := path.Join(pwd, conf.TLSKey)
+  // go runOnSecureCache(cert, key)
+  if err := http.ListenAndServe(prot.Addr, mux); err != nil {
     return err
   }
   return nil
