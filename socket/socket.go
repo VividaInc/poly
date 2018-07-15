@@ -11,6 +11,7 @@ import (
 
   "github.com/VividaInc/poly/asset"
   "github.com/VividaInc/poly/config"
+  "github.com/VividaInc/poly/env"
   "github.com/VividaInc/poly/router"
 )
 
@@ -95,15 +96,19 @@ func addrConcat(h string, p string) string {
     addr   string
     buffer []string
   )
-  host := os.Getenv("ZMEMHOST")
-  port := os.Getenv("ZMEMPORT")
+  host := os.Getenv("HOST")
+  port := os.Getenv("PORT")
   if len(host) == 0 {
     host = h
   }
   if len(port) == 0 {
     port = p
   }
-  buffer = []string{host, ":", port}
-  addr   = strings.Join(buffer, "")
+  if env.Env == "DEVELOPMENT" {
+    buffer = []string{host, ":", port}
+  } else {
+    buffer = []string{":", port}
+  }
+  addr = strings.Join(buffer, "")
   return addr
 }
