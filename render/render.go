@@ -12,10 +12,10 @@ import (
 func RenderHTML(w http.ResponseWriter, n string, o interface{}) *e.RequestError {
   file := strings.Join([]string{"/zmem.Resource/private/template/", n, ".min.tmpl"}, "")
   tmpl, err := template.ParseFiles(
-    path.Join("/zmem.Resource/private/template/layout.min.tmpl"),
-    path.Join("/zmem.Resource/private/template/navigation.min.tmpl"),
-    path.Join("/zmem.Resource/private/template/banner.min.tmpl"),
-    path.Join("/zmem.Resource/private/template/footer.min.tmpl"), file,
+    path.Join("zmem.Resource/private/template/layout.min.tmpl"),
+    path.Join("zmem.Resource/private/template/navigation.min.tmpl"),
+    path.Join("zmem.Resource/private/template/banner.min.tmpl"),
+    path.Join("zmem.Resource/private/template/footer.min.tmpl"), file,
   )
   if err != nil {
     panic(err)
@@ -28,7 +28,7 @@ func RenderHTML(w http.ResponseWriter, n string, o interface{}) *e.RequestError 
 }
 
 func RenderErr(w http.ResponseWriter, s int, o interface{}) {
-  file := strings.Join([]string{"/zmem.Resource/private/template/error.tmpl"}, "")
+  file := strings.Join([]string{"zmem.Resource/private/template/error.tmpl"}, "")
   tmpl, err := template.ParseFiles(file)
   if err != nil {
     panic(err)
