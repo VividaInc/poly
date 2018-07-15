@@ -10,7 +10,7 @@ import (
 )
 
 func RenderHTML(w http.ResponseWriter, n string, o interface{}) *e.RequestError {
-  file := strings.Join([]string{"/zmem.Resource/private/template/", n, ".min.tmpl"}, "")
+  file := strings.Join([]string{"zmem.Resource/private/template/", n, ".min.tmpl"}, "")
   tmpl, err := template.ParseFiles(
     path.Join("zmem.Resource/private/template/layout.min.tmpl"),
     path.Join("zmem.Resource/private/template/navigation.min.tmpl"),
