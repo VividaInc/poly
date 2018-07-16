@@ -489,22 +489,21 @@ func SaveNewUser(fullname string, username string, password string) int64 {
 /* ======================================================================== */
 
 func (db *DatabaseConnection) Connect() (*sql.DB, error) {
-
   const (
-    DRIVER  string = "mysql"
-    OPTIONS string = "root:Dajour98*@/messages?charset=utf8"
+    driver  string = "mysql"
+    options string = "root:Dajour98*@/messages?charset=utf8"
   )
-
-  conn, err := sql.Open(DRIVER, OPTIONS)
-
+  url := os.Getenv("CLEARDB_DATABASE_URL")
+  if len(url) == 0 {
+    url = options
+  }
+  conn, err := sql.Open(driver, url)
   if err != nil {
     return nil, err
   }
-
   if err := conn.Ping(); err != nil {
     return nil, err
   }
-
   return conn, nil
 }
 
