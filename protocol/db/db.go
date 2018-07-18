@@ -6,7 +6,7 @@ import (
 	"strconv"
 
 	_ "github.com/go-sql-driver/mysql"
-  "gihub.com/VividaInc/poly/env"
+  "github.com/VividaInc/poly/env"
 )
 
 type DatabaseConnection struct {
