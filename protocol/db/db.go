@@ -2,9 +2,11 @@ package db
 
 import (
 	"database/sql"
+  "os"
 	"strconv"
 
 	_ "github.com/go-sql-driver/mysql"
+  "gihub.com/VividaInc/poly/env"
 )
 
 type DatabaseConnection struct {
@@ -494,7 +496,7 @@ func (db *DatabaseConnection) Connect() (*sql.DB, error) {
     options string = "root:Dajour98*@/messages?charset=utf8"
   )
   url := os.Getenv("CLEARDB_DATABASE_URL")
-  if len(url) == 0 {
+  if env.Env == "DEVELOPMENT" || len(url) == 0{
     url = options
   }
   conn, err := sql.Open(driver, url)
